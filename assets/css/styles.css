@@ -66,6 +66,23 @@ button {
   cursor: pointer;
 }
 
+.btn--primary {
+  color: #fff;
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+}
+
 /* Header */
 .header {
   padding: 26px 0;
@@ -111,6 +128,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  column-gap: 120px;
 }
 
 .hero__media {
@@ -217,4 +235,42 @@ button {
 
 .hero__list-item:nth-of-type(2) .hero__list-item__thumb {
   background: #c6e2fa;
+}
+
+.hero__heading {
+  font-weight: 800;
+  font-size: 6.6rem;
+  line-height: 1.15;
+  color: #000958;
+}
+
+.hero__desc {
+  width: 391px;
+  margin-top: 24px;
+  font-size: 1.6rem;
+  line-height: 1.88;
+  color: #656689;
+}
+
+.hero__row {
+  display: flex;
+  align-items: center;
+  margin-top: 38px;
+}
+
+.hero__cta-btn {
+  --height: 60px;
+
+  min-width: 190px;
+  font-size: 1.6rem;
+  box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+.hero__cta-link {
+  margin-left: 24px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1;
+  text-decoration: underline;
+  color: #000958;
 }
